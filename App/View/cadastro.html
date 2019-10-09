@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Dev2Work | Novo Cadastro</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+			body {
+				background-color: #7159c1;
+				font-family: 'Roboto', sans-serif;
+
+			}
+			#tituloFixo {
+				color: #FFF;
+				text-align: center;
+				font-weight: bold;
+				font-size: 22pt;
+				margin-top: 10px;
+			}
+			i {
+				color: #71519c;
+			}
+
+			.msg {
+				color: #71519c;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<h2 id="tituloFixo">
+			Dev2Work - Participe da Week Of Development <br>
+			<i class="small material-icons" style="color: #FFF;">important_devices</i>
+		</h2>
+		<div class="card white">
+			<div class="card-content">
+				<span class="card-title">| Cadastro</span>
+				<p class="msg">Preencha os campos abaixo para realizar seu cadastro</p><br><br>
+				<p>
+					<!-- SUBSTITUIR POR FORMULARIO -->
+					<form class="col s12" action="?page=cadastro&acao=cadastrar" method="post">
+						<div class="row">
+							<div class="input-field col s4">
+								<i class="material-icons prefix">account_circle</i>
+								<input placeholder="Digite aqui" type="text" name="nomeUsuario" class="validate" required>
+								<label for="nomeUsuario">Nome Completo</label>
+							</div>
+							<div class="input-field col s4">
+								<i class="material-icons prefix">mail</i>
+								<input placeholder="@" type="text" name="emailUsuario" class="validate" required>
+								<label for="emailUsuario">Seu melhor E-mail</label>
+							</div>
+							<div class="input-field col s4">
+								<i class="material-icons prefix">phone</i>
+								<input placeholder="(xx)xxxxx-xxxxx" type="text" name="telUsuario" class="validate" required>
+								<label for="telUsuario">Telefone</label>
+							</div>
+						</div>	
+						<button class="btn waves-effect waves-light" type="submit">
+							<i class="material-icons right" style="color: #FFF;">send</i>
+							<strong>Cadastrar</strong>
+						</button>					
+					</form>
+				</p>
+			</div>
+		</div>
+		<!-- JS Materialize -->	
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>      
+	</body>
+</html>
